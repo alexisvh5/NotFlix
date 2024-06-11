@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,23 +13,6 @@
     --violeta: #730bcd;
 }
 
-html {
-    font-size: 82.5%;
-}
-
-body {
-    color: var(--blanco);
-    background-color: var(--negro);
-    font-family: "Oxygen", sans-serif;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* HEADER */
 .header_titulo {
     color: var(--rojo);
     font-family: 'Bebas Neue';
@@ -101,15 +83,16 @@ a {
     color: var(--negro);
 }
 
-/* Columna 1 */
-
 .contenedor_foto_nombre {
+    display: flex;
     margin-left: 15px;
     margin-right: 20px;
     padding-top: 10px;
     padding-right: 30px;
     border-right-style: solid;
     border-right-color: var(--azul);
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagen_perfil {
@@ -124,12 +107,23 @@ h4 {
     text-align: center;
 }
 
-/* Columna 2 */
 .contenedor-columna {
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
     padding-right: 30px;
     border-right-style: solid;
     border-right-color: var(--azul);
+    align-items: center;
+}
+
+.contenedor_columna2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    border-right-style: solid;
+    border-right-color: var(--azul);
+    align-items: stretch;
+    text-align: center;
 }
 
 .columna1 {
@@ -153,7 +147,7 @@ li {
 }
 
 .lista-segundo-articulo li {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .input-tarjeta {
@@ -173,44 +167,6 @@ li {
     margin-left: 30px;
 }
 
-/*Botones*/
-
-.contenedor-botones {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.boton {
-    padding: 10px 20px;
-    margin-left: 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--blanco);
-}
-
-.boton:hover {
-    cursor: pointer;
-}
-
-/*hace que se hunda el button*/
-.boton:active {
-    transform: translateY(2px);
-}
-
-#guardar {
-    background-color: var(--azul);
-    margin-bottom: 10px;
-}
-
-#cancelar {
-    background-color: var(--rojo);
-}
-
-/* Footer */
-
 .footer {
     background-color: #141414;
     padding: 40px 0;
@@ -227,8 +183,6 @@ li {
 }
 
 .lista li {
-    display: flex;
-    justify-content: start;
     padding: 10px;
     text-align: start;
     margin-left: 15%;
@@ -252,8 +206,9 @@ li {
     align-items: center;
 }
 
-.lista-iconos {
-    display: flex;
+.lista-iconos li {
+    display: inline;
+    padding: 10px;
 }
 
 .footer-iconos h3 {
@@ -269,3 +224,127 @@ li {
     cursor: pointer;
 }
 
+
+
+@media screen and (min-width: 515px) {
+    /* Estilos para tablet */
+
+    body {
+        color: var(--blanco);
+        background-color: var(--negro);
+        font-family: "Oxygen", sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    span {
+        font-family: 'Bebas Neue';
+    }
+    
+    /*HEADER*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--negro);
+        padding: 1em;
+    }
+    
+    #logo {
+        height: 10ch;
+        width: 10ch;
+    }
+    
+    .header_titulo {
+        color: var(--rojo);
+        font-family: 'Bebas Neue';
+        text-decoration: underline;
+    }
+    
+    /*NAVBAR*/
+    nav {
+        background-color: var(--fondoNav);
+        gap: 5px;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    
+    nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--negro);
+        height: 2.25em;
+        min-width: 6em;
+        font-family: 'Bebas Neue';
+        letter-spacing: 0.3125em;
+        padding: 0.5em;
+    }
+    
+    .color-rojo {
+        background-color: var(--rojo);
+    }
+    
+    .color-rojo:hover {
+        background-color: var(--rojo);
+        color: var(--negro);
+        transform: scale(1.3);
+    }
+    
+    .color-azul {
+        background-color: var(--azul);
+    }
+    
+    .color-azul:hover {
+        background-color: var(--azul);
+        color: var(--negro);
+        transform: scale(1.3);
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+@media screen and (min-width: 896px) {
+    /* Estilos para escritorio */
+
+    nav{ display: flex;
+        justify-content: space-around;}
+    .seccion-caja_filto{
+        display:flex;
+        justify-content: center;
+    }
+    .caja_filtro {
+        margin-top: 2.5em; /* 40px */
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .categorias {
+        padding-left: 15ch;
+    }
+
+    #titulo_pelicula,
+    #titulo_serie {
+        margin-top: 3.75em; /* 60px */
+    }
+
+    .contenido_peliculas,
+    .contenido_series {
+        margin-top: 3.75em; /* 60px */
+    }
+
+    
+    .categorias-barra{
+        display: flex;
+        align-items: center;
+    }
+}
+
+}
