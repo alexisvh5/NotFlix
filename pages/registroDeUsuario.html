@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo.ico">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="../styles/registroDeUsuarioStyles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <!-- Columna 1 -->
+            <h2>Registro de usuario <span id="notflix_span">NOT FLIX</span></h2>
+
+            <article class="formulario_registro">
+                <div class="datos_iniciales">
+                    <form action="../pages/login.html" method="post">
+
+                        <div>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre"
+                                autocomplete="off">
+                        </div>
+
+                        <br><br>
+
+                        <div>
+                            <label for="apellido">Apellido: </label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Introduzca su apellido"
+                                autocomplete="off">
+                        </div>
+                        <br><br>
+
+                        <div>
+                            <label for="correo">Email: </label>
+                            <input type="email" name="correo" id="correo" placeholder="Introduzca su email"
+                                autocomplete="off">
+                        </div>
+
+
+                        <br><br>
+                        <div>
+                            <label for="nombre_de_usuario">Nombre de usuario: </label>
+                            <input type="text" name="nombre_de_usuario" id="nombre_de_usuario"
+                                placeholder="Introduzca su nombre de usuario" autocomplete="off">
+
+                        </div>
+
+                        <br><br>
+
+                        <div>
+                            <label for="contraseña">Contraseña: </label>
+                            <input type="password" name="contraseña" id="contraseña"
+                                placeholder="Introduzca una contraseña">
+                        </div>
+
+                        <br><br>
+
+                        <div>
+                            <label for="repetir_contraseña">Repetir contraseña: </label>
+                            <input type="password" name="repetir_contraseña" id="repetir_contraseña"
+                                placeholder="Ingrese nuevamente su contraseña">
+                        </div>
+
+                        <br><br>
+                </div>
+
+                <!-- Columna 2-->
+                <div class="metodo_de_pago">
+                    <label for="metodo_de_pago">METODO DE PAGO: </label>
+                    <br><br>
+                    <div  class="radio">
+                        <input id="metodo_de_pago" type="radio" name="metodo_de_pago" name="metodo">
+                        <label for="tarjeta_de_credito">Tarjeta de credito: </label>
+                    </div>
+
+                    <br> <br>
+                    <input id="numero_tarjeta" id="tarjeta_de_credito" type="text" maxlength="16"
+                        name="tarjeta_de_credito" placeholder="Numero de tarjeta">
+                    <span><input type="password" name="tarjeta_de_credito" id="tarjeta_de_credito"
+                            placeholder="XXX"></span>
+                    <br> <br>
+                    <div class="radio">
+                        <input type="radio" id="forma_de_pago" name="metodo_de_pago" id="metodo_de_pago" name="metodo">
+                        <label for="cupon_de_pago">Cupón de pago: </label>
+                    </div>
+
+                    <br> <br>
+                    <div class="radio">
+                        <input id="chk_box" type="radio" name="cupon_de_pago" value="pagoFacil"><span>Pagofacil</span>
+                        <input type="radio" id="chk_box" name="cupon_de_pago"
+                                value="rapiPago"><span>Rapipago</span>
+                    </div>
+
+                    <br> <br>
+                    <div class="radio">
+                        <input type="radio" name="metodo_de_pago" id="metodo_de_pago" name="metodo">
+                        <label for="transferencia">Transferencia bancaria: </label>
+                    </div>
+                    <p>CBU: 210909092383489023</p>
+
+                    <!-- Botones -->
+                    <div class="contenedor-botones">
+                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
+                                class="boton" id="enviar" type="submit">Enviar
+                            </button></a>
+                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
+                                class="boton" id="limpiar" type="submit">Limpiar</button></a>
+                    </div>
+
+                </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

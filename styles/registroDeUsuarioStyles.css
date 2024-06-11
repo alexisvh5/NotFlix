@@ -1,0 +1,154 @@
+:root {
+    --azul: #0ddfff;
+    --rojo: #f42d2d;
+    --negro: #000;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: #010406;
+    font-family: 'Oxygen';
+}
+
+/*Generales*/
+
+p {
+    margin-left: 80px;
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    margin-left: 50px;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+#notflix_span {
+    position: absolute;
+    right: 40px;
+    color: var(--rojo);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+input {
+    background-color: #ffffff;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+}
+
+section {
+    margin-bottom: 7%;
+}
+
+/*Columna 1*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-right-color: #0ddfff;
+    height: 60ch;
+    padding: 10px;
+}
+
+form label {
+    display: inline-block;
+    text-align: end;
+    min-width: 30%;
+    color: #FFFFFF;
+}
+
+form input {
+    margin: 8px 0;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.formulario_registro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: baseline;
+    justify-content: space-evenly;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.datos_iniciales {
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    height: 50ch;
+    width: 50ch;
+}
+
+/* Columna 2 */
+
+.metodo_de_pago {
+    border-left-style: solid;
+    border-left-color: var(--azul);
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    height: 58.5ch;
+    width: 59ch;
+    margin: 0;
+    color: var(--blanco);
+}
+
+#chk_box {
+    margin-left: 80px;
+}
+
+#numero_tarjeta {
+    margin-left: 80px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+/*Botones*/
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+.boton {
+    padding: 10px 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+/*hace que se hunda el button*/
+.boton:active {
+    transform: translateY(2px);
+}
+
+#enviar {
+    background-color: var(--azul);
+    margin-bottom: 10px;
+}
+
+#limpiar {
+    background-color: var(--rojo);
+}

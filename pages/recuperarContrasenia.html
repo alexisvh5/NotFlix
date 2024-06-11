@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/images/logo.ico">
+    <title>Recuperar contraseña</title>
+    <link rel="preload" href="../styles/recuperarContraseña.css" as="style">
+    <!--hace que se cargue mas rapido el preload-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <!--primero librerias luego el style para que ya esten cargadas, es importante el orden-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/recuperarContraseña.css">
+</head>
+
+<body>
+    <div class="contenedor-titulo">
+        <header>
+            <h1>¿Olvidaste tu contraseña?<span>Not-Flix</span></h1>
+        </header>
+    </div>
+
+
+    <div class="rectangulo">
+        <form action="../pages/login.html">
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="">Email</label>
+                    <input class="input" type="mail" placeholder="Ingrese su email">
+                </div>
+                <div class="campo">
+                    <label for="">Nombre de usuario</label>
+                    <input class="input" type="text" placeholder="Ingrese su nombre de usuario">
+                </div>
+            </div>
+
+            <div class="contenedor-botones">
+                <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button class="boton"
+                        id="enviar" type="submit">Enviar
+                        Email
+                    </button></a>
+                <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button class="boton"
+                        id="cancelar" type="submit">Cancelar</button></a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

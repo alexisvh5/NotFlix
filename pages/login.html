@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/images/logo.ico">
+    <title>Vista Login</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!--primero librerias luego el style para que ya esten cargadas, es importante el orden-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1>Not-Flix<span>Las mejores series y peliculas</span></h1>
+        </header>
+    </div>
+
+    <div class="registro">
+        <section class="nombre">
+            <form action="../pages/vistaPrincipal.html">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre de usuario</label>
+                        <input class="input" type="text" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="campo">
+                        <label for="">Contraseña</label>
+                        <input class="input" type="password" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="caja-boton">
+                    <button class="boton" type="submit">Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <section class="contraseña">
+        <a class="opcion" href="../pages/recuperarContrasenia.html">Recuperar contraseña</a>
+        <a class="opcion" href="../pages/registroDeUsuario.html">Registrarse</a>
+    </section>
+</body>
+
+</html>

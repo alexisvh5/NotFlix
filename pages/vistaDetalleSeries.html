@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo.ico">
+    <title>Detalles de series</title>
+    <link rel="preload" href="../styles/vistaDetalleSeriesYPeliculas.css" as="style">
+    <!--hace que se cargue mas rapido el preload-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/vistaDetalleSeriesYPeliculas.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header>
+
+        <img id="logo" src="../assets/images/logo.png" alt="">
+        <div>
+            <h1 class="header_titulo">NOT-FLIX</h1>
+        </div>
+
+    </header>
+
+    <!--navegacion-->
+    <div class="navegacion">
+        <nav class="navegacion-principal">
+            <a class="color-rojo" href="vistaPrincipal.html"><span class="material-symbols-outlined">
+                    home
+                </span>HOME</a>
+            <a class="color-azul" href="../pages/vistaPrincipal.html#titulo_pelicula"><span
+                    class="material-symbols-outlined">
+                    movie
+                </span>PELICULAS</a>
+            <a class="color-rojo" href="../pages/vistaPrincipal.html#titulo_serie"><span
+                    class="material-symbols-outlined">
+                    movie
+                </span>SERIES</a>
+            <a class="color-azul" href="../pages/perfil.html"><span class="material-symbols-outlined">
+                    account_box
+                </span>PERFIL</a>
+        </nav>
+    </div>
+
+    <!--Video y Parrafos-->
+    <div class="video-parrafos">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhesaQXLuRY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="contenedor-botones"><a href="https://www.youtube.com/embed/HhesaQXLuRY" target="_blank"><button
+                        class="boton">Comenzar</button></a></div>
+        </div>
+        <div class="parrafos">
+            <div class="titulo-container">
+                <p class="titulo bold">Titulo: </p>
+                <p class="titulo">Breaking Bad</p>
+            </div>
+
+            <div class="temporadas-container">
+                <p class="titulo bold">Temporadas: </p>
+                <select name="temporada" id="temporada">
+                    <option value="" selected>Seleccione una opción</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4 </option>
+                    <option value="5">5</option>
+                </select>
+                <span class="titulo bold" id="episodios">Capitulos: </span>
+                <select name="capitulo" id="capitulo">
+                    <option value="" selected>Seleccione una opción</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4 </option>
+                    <option value="5">5</option>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9 </option>
+                    <option value="5">10</option>
+                    <option value="5">11</option>
+                    <option value="5">12</option>
+                    <option value="5">13</option>
+                </select>
+            </div>
+
+            <div class="genero-container">
+                <p class="genero bold">Genero:</p>
+                <p class="genero">Suspenso</p>
+            </div>
+            <div class="actores-container">
+                <p class="actores bold">Actores:</p>
+                <a class="actores" href="https://es.wikipedia.org/wiki/Bryan_Cranston" target="_blank">Bryan Cranston
+                </a>
+            </div>
+            <p>Un profesor de Química de secundaria con cáncer terminal se asocia a un exestudiante para asegurar el
+                futuro de su familia al fabricar y vender metanfetamina.
+            </p>
+        </div>
+    </div>
+
+    <!--Series similares-->
+    <div class="similares">
+        <h2>Similares</h2>
+        <div class="iframes">
+
+            <div class="peli-uno">
+                <a href="">
+                    <iframe src="https://www.youtube.com/embed/HMGapZwZO_I" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="contenedor-botones"></div>
+                </a>
+            </div>
+
+
+
+            <div class="peli-dos">
+                <a href="">
+                    <iframe src="https://www.youtube.com/embed/sfAc2U20uyg" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+
+            </div>
+
+            <div class="peli-tres">
+                <a href="">
+                    <iframe src="https://www.youtube.com/embed/EzFXDvC-EwM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+            </div>
+
+            <div class="peli-cuatro">
+                <a href="">
+                    <iframe src="https://www.youtube.com/embed/9GgxinPwAGc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-links">
+                <ul class="lista">
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Tarjetas de regalo</a></li>
+                    <li><a href="#">Avisos legales</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-iconos">
+                <div>
+                    <h3>Siguenos</h3>
+                </div>
+                <div>
+                    <ul class="lista-iconos">
+                        <li><i class="fa-brands fa-facebook-f fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

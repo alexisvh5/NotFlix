@@ -1,0 +1,88 @@
+:root {
+    --azul: #0ddfff;
+    --rojo: #f42d2d;
+    --negro: #000;
+    --blanco: #ffffff;
+}
+
+body {
+    color: var(--blanco);
+    font-size: 15px;
+    font-family: "Oxygen", sans-serif;
+    background-color: var(--negro);
+    text-align: center;
+}
+
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    /*jusitficame los elementos en cierta posicion*/
+    align-items: center;
+    /*alinea verticalmente*/
+    font-size: 18px;
+}
+
+.contenedor-titulo span {
+    position: absolute;
+    /*Toma posicion absoluta del elemento que lo contenga y tenga position relative, en este caso, del body*/
+    right: 40px;
+    color: var(--rojo);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Recuperar */
+.rectangulo {
+    margin: 0 auto;
+    /*Lo centra*/
+    margin-top: 40px;
+    background-color: rgba(80, 72, 72, 0.267);
+    padding: 40px;
+    width: 30%;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.campo input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+/*Botones*/
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.boton{
+    padding: 10px 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blanco);
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+#enviar {
+    background-color: var(--azul);
+}
+#cancelar{
+    background-color: var(--rojo);
+}
