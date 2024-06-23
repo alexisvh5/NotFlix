@@ -10,7 +10,6 @@ body {
     color: var(--blanco);
     background-color: var(--negro);
     font-family: "Oxygen", sans-serif;
-    font-size: 1em; /* Base de 16px */
 }
 
 html {
@@ -20,6 +19,7 @@ html {
 span {
     font-family: 'Bebas Neue';
 }
+
 
 /*HEADER*/
 
@@ -31,8 +31,8 @@ header {
 }
 
 #logo {
-    height: 10em; /* 160px */
-    width: 10em; /* 160px */
+    height: 10ch;
+    width: 10ch;
 }
 
 .header_titulo {
@@ -47,7 +47,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--fondoNav);
-    gap: 0.3125em; /* 5px */
+    gap: 5px;
     margin-top: 1%;
     margin-bottom: 2%;
 }
@@ -56,14 +56,14 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.3125em; /* 5px */
+    gap: 5px;
     text-decoration: none;
     color: var(--negro);
-    height: 1.6875em; /* 27px */
-    width: 9.375em; /* 150px */
+    height: 27px;
+    width: 150px;
     font-family: 'Bebas Neue';
-    letter-spacing: 0.3125em; /* 5px */
-    padding: 0.25em; /* 4px */
+    letter-spacing: 5px;
+    padding: 4px;
 }
 
 .color-rojo {
@@ -94,15 +94,15 @@ a {
 /*CATEGORIAS*/
 
 .caja_filtro {
-    margin-top: 3.125em; /* 50px */
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
 
 .categorias {
-    width: 50em; /* 800px */
+    width: 50ch;
     float: left;
-    padding-left: 15em; /* 240px */
+    padding-left: 15ch;
 }
 
 label {
@@ -111,81 +111,84 @@ label {
 }
 
 .categorias select {
-    margin-left: 0.625em; /* 10px */
-    height: 1.875em; /* 30px */
-    width: 30em; /* 480px */
-    border-radius: 0.3125em; /* 5px */
+    margin-left: 10px;
+    height: 30px;
+    width: 30ch;
+    border-radius: 5px;
     outline: none;
 }
 
 /*BARRA DE BUSQUEDA*/
 .barra_de_busqueda {
-    margin-left: 0.3125em; /* 5px */
+    margin-left: 5px;
     float: right;
     display: flex;
     align-items: center;
     width: max-content;
-    padding-right: 10em; /* 160px */
+    padding-right: 10ch;
 }
 
 .barra_de_busqueda input {
-    border-radius: 3.125em; /* 50px */
-    height: 1.875em; /* 30px */
-    width: 40em; /* 640px */
-    padding-left: 0.625em; /* 10px */
+    border-radius: 50px;
+    height: 30px;
+    width: 40ch;
+    padding-left: 10px;
     border: none;
     outline: none;
-    margin-left: 0.625em; /* 10px */
+    margin-left: 10px;
 }
 
 #busqueda {
     color: var(--blanco);
 }
 
+
 /* Contenido peliculas - series */
 
 #titulo_pelicula {
     color: var(--azul);
-    padding-left: 12em; /* 192px */
-    margin-top: 6.25em; /* 100px */
+    padding-left: 12ch;
+    margin-top: 100px;
     text-decoration-line: overline;
     font-family: 'Oxygen';
 }
 
 #titulo_serie {
     color: var(--rojo);
-    padding-left: 12em; /* 192px */
-    margin-top: 6.25em; /* 100px */
+    padding-left: 12ch;
+    margin-top: 100px;
     text-decoration-line: overline;
     font-family: 'Oxygen';
 }
 
 .contenido_peliculas {
-    margin-top: 5.625em; /* 90px */
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contenido_series {
-    margin-top: 5.625em; /* 90px */
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contenido_peliculas img {
-    height: 25em; /* 400px */
-    width: 18.75em; /* 300px */
-    border: 0.3125em solid var(--azul); /* 5px */
+    height: 400px;
+    width: 300px;
+    border: 5px solid var(--azul);
     transition: 0.2s;
+    /*para que no se transforme al instante sino gradualmente*/
 }
 
 .contenido_series img {
-    height: 25em; /* 400px */
-    width: 18.75em; /* 300px */
-    border: 0.3125em solid #5c0000; /* 5px */
+    height: 400px;
+    width: 300px;
+    border: 5px solid #5c0000;
     transition: 0.2s;
+    /*para que no se transforme al instante sino gradualmente*/
 }
 
 .contenido_peliculas :hover {
@@ -199,15 +202,15 @@ label {
 /* Flecha */
 .flechaArriba {
     position: fixed;
-    width: 3.125em; /* 50px */
-    height: 3.125em; /* 50px */
+    width: 50px;
+    height: 50px;
     background: #00084a;
     border-radius: 50%;
-    bottom: 2.5em; /* 40px */
-    right: 3.125em; /* 50px */
+    bottom: 40px;
+    right: 50px;
     text-decoration: none;
     text-align: center;
-    line-height: 3.125em; /* 50px */
+    line-height: 50px;
     color: var(--blanco);
 }
 
@@ -215,7 +218,7 @@ label {
 
 .footer {
     background-color: #141414;
-    padding: 2.5em 0; /* 40px */
+    padding: 40px 0;
 }
 
 .footer-grid {
@@ -229,14 +232,14 @@ label {
 }
 
 .lista li {
-    padding: 0.625em; /* 10px */
+    padding: 10px;
     text-align: start;
-    margin-left: 0.9375em; /* 15px */
+    margin-left: 15%;
 }
 
 .lista a {
     text-decoration: none;
-    font-size: 1.125em; /* 18px */
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.553);
 }
 
@@ -254,7 +257,7 @@ label {
 
 .lista-iconos li {
     display: inline;
-    padding: 0.625em; /* 10px */
+    padding: 10px;
 }
 
 .footer-iconos h3 {
@@ -263,12 +266,16 @@ label {
 
 .footer-iconos i {
     color: rgba(255, 255, 255, 0.614);
-    transform: scale(1.1);
+    transform: scale(110%);
 }
 
 .footer i:hover {
     cursor: pointer;
 }
+
+
+
+
 
 /* RESPONSIVE DESIGN*/
 
@@ -289,30 +296,35 @@ label {
         display: flex;
         justify-content: space-around;
         background-color: #141414;
-        gap: 0.3125em; /* 5px */
+        gap: 5px;
         margin-top: 1%;
         margin-bottom: 2%;
         flex-wrap: wrap;
     }
 
     .barra_de_busqueda {
-        width: 50em; /* 800px */
+        width: 50ch;
         display: grid;
         justify-items: start;
         align-content: center;
         grid-template-columns: 1fr 1fr;
+
     }
 
     #logo {
-        height: 15em; /* 240px */
-        width: 15em; /* 240px */
+        height: 15ch;
+        width: 15ch;
     }
+
+
 
     .header_titulo {
         color: red;
         font-family: 'Bebas Neue';
         text-decoration: underline;
-        font-size: 3em; /* 48px */
+        font-size: 300%;
+
+
     }
 
     header {
@@ -322,16 +334,17 @@ label {
         background-color: #000000;
     }
 
+
     .caja_filtro {
         margin-top: 10%;
         display: grid;
-        grid-template-rows: 3.125em 3.125em; /* 50px */
+        grid-template-rows: 50px 50px;
         justify-items: start;
         align-content: center;
     }
 
     .categorias {
-        width: 50em; /* 800px */
+        width: 50ch;
         display: grid;
         justify-items: start;
         align-content: center;
@@ -339,10 +352,79 @@ label {
     }
 
     .categorias select {
-        height: 1.875em; /* 30px */
-        width: 21em; /* 336px */}
-
-        .categorias-barra{
-            display: inline;
-        }
+        height: 30px;
+        width: 21ch;
+        border-radius: 5px;
     }
+
+    #titulo_pelicula {
+        color: #00e8ef;
+        text-decoration-line: overline;
+        font-family: 'Oxygen';
+        text-align: center;
+    }
+
+    #titulo_serie {
+        margin-top: 100px;
+        color: red;
+        text-decoration-line: overline;
+        font-family: 'Oxygen';
+        text-align: center;
+    }
+
+    .flechaArriba {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        background: #00084a;
+        border-radius: 50%;
+        bottom: 10%;
+        right: 14%;
+        text-decoration: none;
+        text-align: center;
+        line-height: 70px;
+        color: white;
+    }
+
+    .contenido_peliculas {
+        display: grid;
+        grid-template-columns: 50%;
+        margin-top: 90px;
+        margin-left: 10%;
+    }
+
+    .contenido_series {
+        display: grid;
+        grid-template-columns: 50%;
+        margin-top: 90px;
+        margin-left: 10%;
+    }
+
+    .barra_de_busqueda input {
+        border-radius: 50px;
+        height: 30px;
+        width: 21ch;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media (max-width: 515px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .lista-iconos li {
+        display: block;
+        padding: 10px;
+    }
+    
+    .footer-iconos i {
+        transform: scale(100%);
+    }
+}

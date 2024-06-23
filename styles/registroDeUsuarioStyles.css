@@ -152,3 +152,8 @@ form input {
 #limpiar {
     background-color: var(--rojo);
 }
+
+
+.error {
+    color: crimson;
+}

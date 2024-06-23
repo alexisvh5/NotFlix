@@ -79,21 +79,34 @@
 
                 <!-- Columna 2-->
                 <div class="metodo_de_pago">
-                    <label for="metodo_de_pago">METODO DE PAGO: </label>
+                    <label for="metodo_de_pago">MÉTODO DE PAGO:</label>
                     <br><br>
-                    <div  class="radio">
-                        <input id="metodo_de_pago" type="radio" name="metodo_de_pago" name="metodo">
-                        <label for="tarjeta_de_credito">Tarjeta de credito: </label>
+                    <div class="radio">
+                        <input id="tarjeta_radio" type="radio" name="metodo_de_pago" value="tarjeta">
+                        <label for="tarjeta_radio">Tarjeta de crédito:</label>
                     </div>
 
                     <br> <br>
-                    <input id="numero_tarjeta" id="tarjeta_de_credito" type="text" maxlength="16"
+                
+<!--pattern="[0-9]{16,19}" --> 
+                    <input id="numero_tarjeta" type="text" 
                         name="tarjeta_de_credito" placeholder="Numero de tarjeta">
-                    <span><input type="password" name="tarjeta_de_credito" id="tarjeta_de_credito"
-                            placeholder="XXX"></span>
-                    <br> <br>
+                    
+                        <span>
+                    
+
+                           <!--pattern= [1-9]{3}  --> 
+
+                    <input type="text"   name="tarjeta_de_credito" id="numero_de_seguridad" 
+                            placeholder="XXX">
+                        
+                        </span>
+                    
+                    
+
+                            <br> <br>
                     <div class="radio">
-                        <input type="radio" id="forma_de_pago" name="metodo_de_pago" id="metodo_de_pago" name="metodo">
+                        <input type="radio" id="forma_de_pago" name="metodo_de_pago" value="cupon" >
                         <label for="cupon_de_pago">Cupón de pago: </label>
                     </div>
 
@@ -106,26 +119,35 @@
 
                     <br> <br>
                     <div class="radio">
-                        <input type="radio" name="metodo_de_pago" id="metodo_de_pago" name="metodo">
+                        <input type="radio" name="metodo_de_pago" id="metodo_de_pago" name="metodo" value="transferencia_bancaria">
                         <label for="transferencia">Transferencia bancaria: </label>
                     </div>
                     <p>CBU: 210909092383489023</p>
 
                     <!-- Botones -->
                     <div class="contenedor-botones">
-                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
+                        <a class="enlace" href="../pages/vistaPantallaPrincipal.html" target="_blank"> <button
                                 class="boton" id="enviar" type="submit">Enviar
                             </button></a>
-                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
-                                class="boton" id="limpiar" type="submit">Limpiar</button></a>
+                        <a class="enlace" href="../pages/vistaPantallaPrincipal.html" target="_blank"> <button
+                                class="boton" id="limpiar" type="reset">Limpiar</button></a>
                     </div>
 
                 </div>
                 </form>
+
             </article>
+
+            <p id="mensaje" class="error"></p>
+
         </section>
 
     </main>
+
+
+
+
+    <script src="../scripts/registroDeUsuario.js"></script>
 
 </body>
 
