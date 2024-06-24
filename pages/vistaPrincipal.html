@@ -32,13 +32,13 @@
 
     <!--NAVBAR-->
     <nav class="navegacion-principal">
-        <a class="color-rojo" href="vistaPrincipal.html"><span class="material-symbols-outlined">
+        <a class="color-rojo" href="vistaPrincipal.html"  onclick="quitarFiltro()"><span class="material-symbols-outlined">
                 home
             </span>HOME</a>
-        <a class="color-azul" href="#titulo_pelicula"><span class="material-symbols-outlined">
+        <a class="color-azul"  onclick="mostrarTodasLasPeliculas()"><span class="material-symbols-outlined">
                 movie
             </span>PELICULAS</a>
-        <a class="color-rojo" href="#titulo_serie"><span class="material-symbols-outlined">
+        <a class="color-rojo" onclick="mostrarTodasLasSeries()"><span class="material-symbols-outlined">
                 movie
             </span>SERIES</a>
         <a class="color-azul" href="perfil.html"><span class="material-symbols-outlined">
@@ -53,28 +53,29 @@
 
             <div class="categorias">
                 <label for="categoria">Categorias: </label>
-                <select name="categoria" id="categoria">
+                <select onchange="aplicarFiltro()"  name="genero" id="genero">
 
-                    <option value="" selected>Seleccione una opción</option>
-                    <option value="1">Accion</option>
-                    <option value="2">Aventura</option>
-                    <option value="3">Catastrofe</option>
-                    <option value="4">Ciencia Ficción</option>
-                    <option value="5">Comedia</option>
-                    <option value="6">Documental</option>
-                    <option value="7">Drama</option>
-                    <option value="8">Fantasia</option>
-                    <option value="9">Musical</option>
-                    <option value="10">Suspenso</option>
-                    <option value="11">Terror</option>
+                    <option  onchange="ocultarFiltro()" value="Seleccione una opción" selected>Seleccione una opción</option>
+                    <option value="Accion">Accion</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Catastrofe">Catastrofe</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Documental">Documental</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Terror">Terror</option>
                 </select>
+                <button onclick="quitarFiltro()" id="filtrar">Quitar filtro</button>
             </div>
 
             <div class="barra_de_busqueda">
                 <span id="busqueda" class="material-symbols-outlined">
                     search
                 </span>
-                <input type="search" placeholder="Buscar por nombre">
+                <input id="searchBox"  onkeyup="buscar()"  type="search" placeholder="Buscar por nombre">
 
             </div>
 
@@ -82,7 +83,10 @@
         <br>
         <br>
 
+        
         <!-- Peliculas y series -->
+
+        <!--
         <div class="container">
             <div class="line-container"></div>
             <h2 id="titulo_pelicula">PELICULAS DISPONIBLES</h2>
@@ -113,7 +117,7 @@
 
         <article class="contenido_series">
 
-            <a href="vistaDetalleSeries.html"><img src="../assets/images/series/big_ban.jpg " alt=""></a>
+            <a href="vistaDetalleSeries.html"><img src="../assets/images/series/big_ban.jpg" alt=""></a>
             <a href="vistaDetalleSeries.html"><img src="../assets/images/series/breaking.jpg" alt=""></a>
 
             <a href="vistaDetalleSeries.html"><img src="../assets/images/series/dexter.jpg" alt=""></a>
@@ -127,6 +131,16 @@
             <a href="vistaDetalleSeries.html"><img src="../assets/images/series/walking.jpg" alt=""></a>
 
         </article>
+-->
+
+        <section id="contenido">
+
+
+
+
+        </section>
+
+
 
     </section>
 

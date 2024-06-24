@@ -118,6 +118,10 @@ label {
     outline: none;
 }
 
+button{
+    margin-left: 5%;
+}
+
 /*BARRA DE BUSQUEDA*/
 .barra_de_busqueda {
     margin-left: 5px;
@@ -162,11 +166,12 @@ label {
 }
 
 .contenido_peliculas {
-    margin-top: 90px;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .contenido_series {
     margin-top: 90px;
