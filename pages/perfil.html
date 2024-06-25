@@ -55,22 +55,24 @@
         <div class="contenedor_foto_nombre">
             <img class="imagen_perfil" src="../assets/images/fotoPerfil.png" alt="fotoPerfil" width="180"
                 title="foto Perfil">
-            <h4>Nombre del usuario </h4>
+            <h4 id="nombreUser">Nombre del usuario </h4>
         </div>
 
         <!-- Columna 2 -->
         <article class="contenedor-columna">
-            <form class="formulario" action="#">
+            <form class="formulario" action="/pages/perfil.html">
                 <ul>
                     <li>
                         <label for="email" class="columna1">Email</label>
-                        <input type="email" name="email" value="alexis@hotmail.com">
+                        <input type="email" name="emailActual" id="emailActual">
                     </li>
 
                     <li>
                         <label for="contraseña" class="columna1">Contraseña</label>
-                        <input type="contraseña" value="***************">
+                        <input type="contraseña" placeholder="***************" id="inputContraseñaActual">
                     </li>
+
+
 
                     <br><br>
 
@@ -85,20 +87,19 @@
                     <br><br><br>
                     <br>
                     <div class="contenedor-boton-guardar">
-                        <button
-                        class="boton" id="guardar" type="submit">Guardar cambios
-                    </button>
-<br>
-<div>
+                        <button class="boton" id="guardar" type="submit">Guardar cambios
+                        </button>
+                        <br>
+                        <div>
 
-<ul id="correciones1">
-   
-</ul>
-</div>
+                            <ul id="correciones1">
+
+                            </ul>
+                        </div>
 
                     </div>
                 </ul>
-                
+
                 <br>
             </form>
         </article>
@@ -112,28 +113,29 @@
             <form action="#" method="get">
 
                 <ul class="lista-segundo-articulo">
-                    <li><input type="radio" name="opcionDePago">
-                        <label for="opcionDePago">Tarjeta de credito</label>
+                    <li>
+                        <input type="radio" name="opcionDePago" id="tarjetaDeCredito">
+                        <label for="tarjetaDeCredito">Tarjeta de credito</label>
                     </li>
                     <li>
-                        <input placeholder="Numero de tarjeta " class="input-tarjeta" type="number">
-                        <input class="input-tarjeta2" placeholder="XXX" type="number">
+                        <input placeholder="Numero de tarjeta " class="input-tarjeta" type="number" id="numeroTarjeta">
+                        <input class="input-tarjeta2" placeholder="XXX" type="number" id="numero3digitos">
                     </li>
 
                     <li>
-                        <input type="radio" name="opcionDePago">
+                        <input type="radio" name="opcionDePago" id="CuponDePago">
                         <label for="opcionDePago">Cupon de pago</label>
                     </li>
 
                     <li class="lista-pago-facil">
                         <label for="PagoFacil"> Pago Facil</label>
-                        <input type="checkbox" value="CuponPago" id="PagoFacil" name="name1" checked>
+                        <input type="checkbox" value="CuponPago" id="PagoFacil" name="name1">
                         <label for="RapiPago"> Rapipago</label>
                         <input type="checkbox" value="CuponPago2" id="RapiPago" name="name1">
                     </li>
 
                     <li>
-                        <input type="radio" name="opcionDePago"  >
+                        <input type="radio" name="opcionDePago">
                         <label for="opcionDePago">Tranferencia bancaria</label>
                     </li>
 
@@ -144,16 +146,16 @@
 
                     <!-- Botones -->
                     <div class="contenedor-botones">
-            
-                    <button class="boton" id="cancelar" type="submit">Cancelar suscripcion</button>
 
-                    <br>
-<div>
+                        <button class="boton" id="cancelar" type="submit">Cancelar suscripcion</button>
 
-<ul id="correciones2">
-   
-</ul>
-</div>
+                        <br>
+                        <div>
+
+                            <ul id="correciones2">
+
+                            </ul>
+                        </div>
                     </div>
                 </ul>
             </form>
@@ -163,32 +165,33 @@
 
     <!--Footer-->
     <footer class="footer">
-            <div class="footer-grid">
-                <div class="footer-links">
-                    <ul class="lista">
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Tarjetas de regalo</a></li>
-                        <li><a href="#">Avisos legales</a></li>
-                        <li><a href="#">Centro de ayuda</a></li>
-                    </ul>
+        <div class="footer-grid">
+            <div class="footer-links">
+                <ul class="lista">
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Tarjetas de regalo</a></li>
+                    <li><a href="#">Avisos legales</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-iconos">
+                <div>
+                    <h3>Siguenos</h3>
                 </div>
-                <div class="footer-iconos">
-                    <div>
-                        <h3>Siguenos</h3>
-                    </div>
-                    <div>
-                        <ul class="lista-iconos">
-                            <li><i class="fa-brands fa-facebook-f fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-instagram fa-2xl""></i></li>
+                <div>
+                    <ul class="lista-iconos">
+                        <li><i class="fa-brands fa-facebook-f fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-instagram fa-2xl""></i></li>
                         </ul>
                     </div>
                 </div>
             </div>
     </footer>
 
-    <script src="/scripts/script.js"></script>
+    <script src=" /scripts/script.js"></script>
+                              
 
 </body>
 
