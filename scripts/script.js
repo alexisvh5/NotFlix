@@ -30,8 +30,6 @@ let checkPagos = document.getElementsByName("name1");
 
 form.addEventListener("submit", (e) => {
 
-
-let aVerSiSale = document.getElementById("#a");
     e.preventDefault();
 
     mensaje.innerHTML="";
