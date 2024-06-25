@@ -197,6 +197,9 @@ form input {
     .datos_iniciales{
         height: 42em;
     }
+    .error p{
+        margin-left: 1%;
+    }
   
 }
 
@@ -230,6 +233,8 @@ form input {
     }
 
 
-
+    .error p{
+        margin-left: 1%;
+    }
     
 }

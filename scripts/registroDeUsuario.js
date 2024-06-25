@@ -57,6 +57,8 @@ Se suele solucionar colocando el js debajo del main del sitio web, pero por si a
         let repetir_contrasenia = document.querySelector('#repetir_contraseña').value.trim()
         let metodosDePagos = document.getElementsByName('metodo_de_pago')
 
+        
+
 
         // variable para determinar que se haya seleccionado una opción del radio
 
@@ -126,8 +128,8 @@ Se suele solucionar colocando el js debajo del main del sitio web, pero por si a
 
         switch (metodoPagoSeleccionado) {
             case 'tarjeta':
-                numeroDeTarjeta = document.getElementById('numero_tarjeta').value
-                numeroDeSeguridad = document.getElementById('numero_de_seguridad').value
+               var numeroDeTarjeta = document.getElementById('numero_tarjeta').value
+               var numeroDeSeguridad = document.getElementById('numero_de_seguridad').value
 
                 regerNumeroDeSeguridad = /^\d[1-9]{2}$/
 
@@ -152,7 +154,7 @@ Se suele solucionar colocando el js debajo del main del sitio web, pero por si a
 
                 cupones = document.getElementsByName('cupon_de_pago')
                 console.log(cupones)
-                cuponSeleccionado = null
+               var cuponSeleccionado = null
                 for (var i = 0; i < cupones.length; i++) {
                     if (cupones[i].checked) {
                         cuponSeleccionado = cupones[i].value;
@@ -174,7 +176,22 @@ Se suele solucionar colocando el js debajo del main del sitio web, pero por si a
             //muestre los errores
             mensaje.innerHTML = mensajesError;
         } else {
+
+            var usuario = {
+                nombreEscogido: nombre,
+                apellidoEscogido: apellido,
+                emailEscogido: email,
+                nombreDeUsuarioEscogido: nombre_de_usuario,
+                contraseniaEscogida: contrasenia,
+                cuponEscogido:  cuponSeleccionado,
+                numeroDeTarjetaCorrespondiente: numeroDeTarjeta,
+                numeroDeSeguridadCorrespondiente: numeroDeSeguridad
+                // Agregar más campos según sea necesario
+            };
+            localStorage.setItem('usuarioRegistrado',JSON.stringify(usuario))
             form.submit();
+
+            
         }
 
     }

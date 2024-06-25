@@ -91,7 +91,7 @@ let contenidoCompleto = [
     },
 
     {
-        "Titulo": "Breaking Bad",
+        "Titulo": "Dexter",
         "Formato": "Serie",
         "Genero": "Suspenso",
         "Poster": "../assets/images/series/dexter.jpg"
@@ -188,9 +188,9 @@ function aplicarFiltro(){
                 seccionContenido.innerHTML += `
                 <article>
                     <a href="../pages/vistaDetallePelicula.html"> 
-                        <figure class="contenido_peliculas"> 
+                        <div class="contenido_peliculas"> 
                             <img src="${itemContenidoFiltrado.Poster}" alt="${itemContenidoFiltrado.Titulo}">
-                        </figure>
+                        </div>
                     </a>
                 </article>`;
     
@@ -200,9 +200,9 @@ function aplicarFiltro(){
                 seccionContenido.innerHTML += `
                 <article>
                     <a href="../pages/vistaDetalleSeries.html"> 
-                        <figure class="contenido_peliculas"> 
+                        <div class="contenido_peliculas"> 
                             <img src="${itemContenidoFiltrado.Poster}" alt="${itemContenidoFiltrado.Titulo}">
-                        </figure>
+                        </div>
                     </a>
                 </article>`;
             }
@@ -243,9 +243,9 @@ function buscar(){
                 seccionContenido.innerHTML += `
                 <article>
                     <a href="../pages/vistaDetallePelicula.html"> 
-                        <figure class="contenido_peliculas"> 
+                        <div class="contenido_peliculas"> 
                             <img src="${itemContenidoBuscado.Poster}" alt="${itemContenidoBuscado.Titulo}">
-                        </figure>
+                        </div>
                     </a>
                 </article>`;
     
@@ -256,9 +256,9 @@ function buscar(){
                 seccionContenido.innerHTML +=
                 `<article>
                      <a href="../pages/vistaDetalleSeries.html"> 
-                         <figure class="contenido_peliculas"> 
+                         <div class="contenido_peliculas"> 
                             <img src= "${itemContenidoBuscado.Poster}">
-                         </figure
+                         </div
                      </a> 
                 </article>` 
             }
@@ -292,9 +292,9 @@ function mostrarTodasLasPeliculas(){
         seccionContenido.innerHTML += `
             <article>
                 <a href="../pages/vistaDetallePelicula.html"> 
-                    <figure class="contenido_peliculas"> 
+                    <div class="contenido_peliculas"> 
                         <img src="${itemContenido.Poster}" alt="${itemContenido.Titulo}">
-                    </figure>
+                    </div>
                 </a>
             </article>`;
     });
@@ -311,9 +311,9 @@ function mostrarTodasLasSeries(){
         seccionContenido.innerHTML += `
             <article>
                 <a href="../pages/vistaDetalleSeries.html"> 
-                    <figure class="contenido_peliculas"> 
+                    <div class="contenido_peliculas"> 
                         <img src="${itemContenido.Poster}" alt="${itemContenido.Titulo}">
-                    </figure>
+                    </div>
                 </a>
             </article>`;
     });
@@ -330,9 +330,9 @@ function mostrarTodoElContenido(){
             seccionContenido.innerHTML += `
             <article>
                 <a href="../pages/vistaDetallePelicula.html"> 
-                    <figure class="contenido_peliculas"> 
+                    <div class="contenido_peliculas"> 
                         <img src="${itemContenido.Poster}" alt="${itemContenido.Titulo}">
-                    </figure>
+                    </div>
                 </a>
             </article>`;
 
@@ -341,9 +341,9 @@ function mostrarTodoElContenido(){
             seccionContenido.innerHTML += `
             <article>
                 <a href="../pages/vistaDetalleSeries.html"> 
-                    <figure class="contenido_peliculas"> 
+                    <div class="contenido_peliculas"> 
                         <img src="${itemContenido.Poster}" alt="${itemContenido.Titulo}">
-                    </figure>
+                    </div>
                 </a>
             </article>`;
 

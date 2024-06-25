@@ -77,8 +77,9 @@ label {
 input {
     outline: none;
     border: none;
-    padding: 12px;
-    border-radius: 5px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 86%;
 }
 
 /* Boton */
