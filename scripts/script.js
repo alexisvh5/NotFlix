@@ -30,16 +30,17 @@ let checkPagos = document.getElementsByName("name1");
 
 form.addEventListener("submit", (e) => {
 
+
+let aVerSiSale = document.getElementById("#a");
     e.preventDefault();
 
     mensaje.innerHTML="";
 
-
-
+    let poneNombre = false ;
     let esValido = true;
     let contraseñaBien = true;
 
-
+  
     if (inputEmail.value === ''|| inputEmail.value !=userRegistrado.email) {
         mensaje.innerHTML += `<li>No estas poniendo Email correcto</li><li> es: ${userRegistrado.email}</li>`;
     }
@@ -82,11 +83,13 @@ form.addEventListener("submit", (e) => {
 
 
             if (radios[i].id === "tarjetaDeCredito") {
+                localStorage.clear("radioCuponDePagoElegido");
                 if (!(regNumero3Digitos.test(input3digitos.value)) || !(regNumeroTrajeta.test(inputNumeroTarjeta.value))) {
                     mensaje.innerHTML += "<li>El número de tarjeta es incorrecto</li>";
                     radioSeleccionado = false;
                     esValido =false;
                 }
+    
                 let sumaAnteriores = 0;
                 for (let j = 0; j < inputNumeroTarjeta.value.length - 1; j++) {
                     sumaAnteriores += parseInt(inputNumeroTarjeta.value[j]);
@@ -104,47 +107,56 @@ form.addEventListener("submit", (e) => {
                     radioSeleccionado = false;
                     esValido =false;
                 }
+                localStorage.regNumeroTrajetaCred = inputNumeroTarjeta.value + " / "+ input3digitos.value;
             }
 
             if (radios[i].id === "CuponDePago") {
 
                 let seleccionado = false;
-
+                localStorage.clear("regNumeroTrajetaCred");
                 for (let j = 0; j < checkPagos.length; j++) {
                     if (checkPagos[j].checked) {
                         seleccionado = true;
+                        localStorage.radioCuponDePagoElegido= checkPagos[j].id;
                         break;
                     }
+                  
                 }
                 if (!seleccionado) {
                     mensaje.innerHTML += "<li>Debes seleccionar un método de pago con cupón</li>";
                     esValido = false;
                 }
+           
             }
+
+            localStorage.pagoSeleccionado = radios[i].id;
         radioSeleccionado = true; 
         break;
     }
 radioSeleccionado = false;
-}
-
-
+};
    if (!radioSeleccionado) {
         mensaje.innerHTML += "<li>Falta seleccionar un metodo de pago</li>";
         esValido = false;
     }
-let poneNombre = false ;
+
  if(esValido && radioSeleccionado){
     form.submit();
     poneNombre =true;
- }
-if(poneNombre){
-nombreUser.innerHTML += ` <srtong>: ${userRegistrado.nombre}</strong> `;
-}
+    ponerNombre(poneNombre)
+ };
 
  
 });
 
 
+function ponerNombre(poneNombre){
+
+    if(poneNombre){
+        nombreUser.innerHTML = ` <strong> Hola! :  ${userRegistrado.nombre}</strong> `;
+        }
+        
+}
 
 
 
