@@ -20,7 +20,7 @@ p {
 h2 {
     color: #FFFFFF;
     font-family: 'Bebas Neue';
-    margin-left: 50px;
+    margin-left: 10%;
 }
 
 span {
@@ -29,7 +29,7 @@ span {
 
 #notflix_span {
     position: absolute;
-    right: 40px;
+    right: 20%;
     color: var(--rojo);
     font-family: "Bebas Neue", sans-serif;
 }
@@ -51,22 +51,23 @@ form {
     display: flex;
     flex-direction: column;
     border-style: solid;
+    border-bottom-color: transparent;
     border-right-color: #0ddfff;
-    height: 60ch;
-    padding: 10px;
+    height: 37em;
+    padding: 1%;
 }
 
 form label {
     display: inline-block;
-    text-align: end;
-    min-width: 30%;
+    text-align: left;
+    min-width: 31%;
     color: #FFFFFF;
 }
 
 form input {
-    margin: 8px 0;
+    margin: 3% 0;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 10%;
 }
 
 .formulario_registro {
@@ -76,15 +77,14 @@ form input {
     align-content: stretch;
     align-items: baseline;
     justify-content: space-evenly;
-    line-height: 25px;
+    line-height: 1.5em;
     margin: 0 auto;
 }
 
 .datos_iniciales {
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
-    height: 50ch;
-    width: 50ch;
+    padding: 4%;
+    height: 33em;
+    width: 30em;
 }
 
 /* Columna 2 */
@@ -92,25 +92,27 @@ form input {
 .metodo_de_pago {
     border-left-style: solid;
     border-left-color: var(--azul);
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    height: 58.5ch;
-    width: 59ch;
-    margin: 0;
+    border-top-color: transparent;
+    padding: 2%;
+    height: 35em;
+    width: 33em;
+    margin: 1%;
     color: var(--blanco);
 }
 
 #chk_box {
-    margin-left: 80px;
+    margin-left: 20%;
 }
 
 #numero_tarjeta {
-    margin-left: 80px;
+    margin-left: 20%;
 }
 
+
+#numero_de_seguridad{
+    margin-left: 1%;
+
+}
 .radio {
     display: flex;
     align-items: center;
@@ -156,4 +158,78 @@ form input {
 
 .error {
     color: crimson;
+}
+
+
+/*Mobile*/
+@media (max-width:480px){
+    .metodo_de_pago{
+        margin-top: 3em;
+        border-top-color: #0ddfff;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    form{
+        border-bottom-color: #0ddfff;
+        border-right-color: transparent;
+        height: 42em;
+    }
+    form input{
+        display: block;
+        margin-left: 20%;
+    }
+
+    form label{
+        margin-left: 5%;
+    }
+    #notflix_span{
+        right: 3%;
+    }
+    h2{
+        margin-left: 1%;
+    }
+   
+    #numero_de_seguridad{
+        margin-left: 20%;
+
+    }
+    .datos_iniciales{
+        height: 42em;
+    }
+  
+}
+
+
+
+/*Tablet*/
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    form{
+        border-style: solid;
+        border-bottom-color: #0ddfff;
+        border-right-color: transparent;
+        height: 37em;
+        width: 29em;
+        padding: 1%;
+        
+    }
+
+    .metodo_de_pago{
+        
+        border-style: solid;
+        border-top-color: #0ddfff;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+
+        margin-top: 10%;
+        height: 33em;
+        width: 32em;
+        padding: 1%;
+    }
+
+
+
+    
 }
