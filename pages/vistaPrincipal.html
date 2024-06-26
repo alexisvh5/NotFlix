@@ -29,14 +29,22 @@
         <div>
             <h1 class="header_titulo">NOT-FLIX</h1>
         </div>
+
+        <br>
+
     </header>
+    <span id="cerrar_sesion">Cerrar Sesion 
+        <span id="icono_salir"><i class="fa-solid fa-arrow-right-from-bracket"   style="color: #00e8ef;"></i>
+        </span>
+    </span>
 
     <!--NAVBAR-->
     <nav class="navegacion-principal">
-        <a class="color-rojo" href="vistaPrincipal.html"  onclick="quitarFiltro()"><span class="material-symbols-outlined">
+        <a class="color-rojo" href="vistaPrincipal.html" onclick="quitarFiltro()"><span
+                class="material-symbols-outlined">
                 home
             </span>HOME</a>
-        <a class="color-rojo"  onclick="mostrarTodasLasPeliculas()"><span class="material-symbols-outlined">
+        <a class="color-rojo" onclick="mostrarTodasLasPeliculas()"><span class="material-symbols-outlined">
                 movie
             </span>PELICULAS</a>
         <a class="color-rojo" onclick="mostrarTodasLasSeries()"><span class="material-symbols-outlined">
@@ -54,9 +62,10 @@
 
             <div class="categorias">
                 <label for="categoria">Categorias: </label>
-                <select onchange="aplicarFiltro()"  name="genero" id="genero">
+                <select onchange="aplicarFiltro()" name="genero" id="genero">
 
-                    <option  onchange="ocultarFiltro()" value="Seleccione una opción" selected>Seleccione una opción</option>
+                    <option onchange="ocultarFiltro()" value="Seleccione una opción" selected>Seleccione una opción
+                    </option>
                     <option value="Accion">Accion</option>
                     <option value="Aventura">Aventura</option>
                     <option value="Catastrofe">Catastrofe</option>
@@ -76,7 +85,7 @@
                 <span id="busqueda" class="material-symbols-outlined">
                     search
                 </span>
-                <input id="searchBox"  onkeyup="buscar()"  type="search" placeholder="Buscar por nombre">
+                <input id="searchBox" onkeyup="buscar()" type="search" placeholder="Buscar por nombre">
 
             </div>
 
@@ -84,7 +93,7 @@
         <br>
         <br>
 
-        
+
         <!-- Peliculas y series -->
 
         <!--
@@ -169,10 +178,10 @@
                         <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
                         <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
                         <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 

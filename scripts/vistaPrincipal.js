@@ -354,4 +354,12 @@ function mostrarTodoElContenido(){
     });
 }
 
+document.getElementById("icono_salir").addEventListener('click', function(){
+
+
+    localStorage.clear()
+
+    window.location.href = '../pages/login.html'
+})
+
     

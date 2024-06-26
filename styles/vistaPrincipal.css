@@ -30,6 +30,39 @@ header {
     background-color: var(--negro);
 }
 
+
+#icono_salir{
+    padding-right: 1%;
+}
+
+#icono_salir:hover{
+    cursor: pointer;
+    
+    transition: transform 0.9s ease-out;
+}
+
+#icono_salir:active{
+    transform: translateY(6px);
+}
+
+
+
+#cerrar_sesion{
+    font-family: 'Bebas Neue';
+    position: sticky;
+    left: 100%;
+    font-style: italic;
+    font-size: 1.3em;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+
 #logo {
     height: 10ch;
     width: 10ch;
@@ -74,6 +107,13 @@ nav a {
     background-color: var(--rojo);
     color: var(--negro);
     transform: scale(1.3);
+    cursor: pointer;
+}
+
+.color-rojo:active{
+    transition: transform 0.1s ease-out;
+
+    transform: translateY(1px);
 }
 
 .color-azul {
@@ -382,6 +422,8 @@ button{
         font-family: 'Oxygen';
         text-align: center;
     }
+
+
 
     #titulo_serie {
         margin-top: 100px;
