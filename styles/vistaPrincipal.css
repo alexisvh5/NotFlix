@@ -125,6 +125,8 @@ label {
 
 button{
     margin-left: 5%;
+    height: 3em;
+    border-radius: 2em;
 }
 
 /*BARRA DE BUSQUEDA*/
@@ -293,8 +295,7 @@ button{
 
     body {
         background-color: rgb(0, 0, 0);
-        height: 100%;
-        width: 100%;
+        width: -webkit-fill-available;
     }
 
     html {
@@ -306,19 +307,23 @@ button{
         display: flex;
         justify-content: space-around;
         background-color: #141414;
-        gap: 5px;
+        gap: 0.4em;
         margin-top: 1%;
         margin-bottom: 2%;
         flex-wrap: wrap;
+        padding: 1%;
     }
 
     .barra_de_busqueda {
-        width: 50ch;
-        display: grid;
+        width: 65%;
+        display: flex;
         justify-items: start;
-        align-content: center;
         grid-template-columns: 1fr 1fr;
-
+        position: relative;
+        flex-direction: row;
+        max-width: 100%;
+        padding: 1%;
+        justify-content: space-between;
     }
 
     #logo {
@@ -354,20 +359,21 @@ button{
     }
 
     .categorias {
-        width: 27em;
-        height: 3em;
+        width: auto;
+        height: 11em;
+        position: relative;
         display: flex;
         justify-items: start;
         grid-template-columns: 1fr 1fr;
-        margin-left: -17%;
         flex-direction: row;
-        align-items: center;
+        justify-content: space-between;
+        padding: 1%;
     }
 
     .categorias select {
         height: 3em;
-        width: 18em;
-        border-radius: 5px;
+    width: 65%;
+    border-radius: 3em;
     }
 
     #titulo_pelicula {
@@ -387,15 +393,15 @@ button{
 
     .flechaArriba {
         position: fixed;
-        width: 70px;
-        height: 70px;
+        width: 4em;
+        height: 4em;
         background: #00084a;
         border-radius: 50%;
         bottom: 10%;
         right: 14%;
         text-decoration: none;
         text-align: center;
-        line-height: 70px;
+        line-height: 4em;
         color: white;
     }
 
@@ -415,8 +421,10 @@ button{
 
     .barra_de_busqueda input {
         border-radius: 5em;
-        height: 3em;
-        width: 23em;
+        height: 2em;
+        width: 93%;
+        position: relative;
+        left: 14%;
     }
 
     .footer-grid {
@@ -433,13 +441,7 @@ button{
         text-align: center;
     }
 
-    .color-azul{
-        background-color: var(--rojo);
-        width: 100%;
-        padding: 2%;
-        margin-bottom: 2%;
-        text-align: center;
-    }
+   
 
 }
 
@@ -457,4 +459,77 @@ button{
     .footer-iconos i {
         transform: scale(100%);
     }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: #141414;
+        gap: 0.4em;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        flex-wrap: wrap;
+        padding: 1%;
+    }
+
+    .categorias{
+        gap: 5%;
+        width: auto;
+        height: 11em;
+        position: relative;
+        display: flex;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        padding: 1%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .caja_filtro {
+        margin-top: 10%;
+        display: flex;
+        justify-items: start;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .barra_de_busqueda{
+        width: 87%;
+        display: flex;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .color-rojo{
+        background-color: var(--rojo);
+        width: 100%;
+        padding: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    button{
+        margin: 0;
+        height: 19%;
+    }
+
+    .categorias select{
+        margin-left: 0;
+        width: 57%;
+    }
+
+    .contenido_peliculas img{
+        height: 51%;
+        width: 83%;
+    }
+
+    .barra_de_busqueda input{
+        width: 80%;
+    }
+
 }
