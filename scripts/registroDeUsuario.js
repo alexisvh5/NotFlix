@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let mensaje = document.querySelector("#mensaje");
 
+
  
     form.addEventListener("submit", (evento) => {
         evento.preventDefault()
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let repetir_contrasenia = document.querySelector('#repetir_contraseña').value.trim()
         let metodosDePagos = document.getElementsByName('metodo_de_pago')
 
-
+        
         
 
 

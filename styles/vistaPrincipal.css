@@ -482,7 +482,7 @@ button{
         margin-bottom: 2%;
         text-align: center;
     }
-
+   
    
 
 }
@@ -572,6 +572,16 @@ button{
 
     .barra_de_busqueda input{
         width: 80%;
+    }
+
+    main{
+        content: "";
+    display: table;
+    clear: both;
+    }
+
+    body{
+        position: relative;
     }
 
 }

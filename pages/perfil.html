@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/images/logo.ico">
     <title>Perfil de usuario</title>
-    <link rel="stylesheet" href="../styles/perfilStyles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
@@ -18,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../styles/perfilStyles.css">
+
 </head>
 
 <body>
@@ -35,14 +36,14 @@
         <a class="color-rojo" href="vistaPrincipal.html"><span class="material-symbols-outlined">
                 home
             </span>HOME</a>
-        <a class="color-azul" href="../pages/vistaPrincipal.html#titulo_pelicula"><span
+        <a class="color-rojo" href="../pages/vistaPrincipal.html#titulo_pelicula"><span
                 class="material-symbols-outlined">
                 movie
             </span>PELICULAS</a>
         <a class="color-rojo" href="../pages/vistaPrincipal.html#titulo_serie"><span class="material-symbols-outlined">
                 movie
             </span>SERIES</a>
-        <a class="color-azul" href="perfil.html"><span class="material-symbols-outlined">
+        <a class="color-rojo" href="perfil.html"><span class="material-symbols-outlined">
                 account_box
             </span>PERFIL</a>
     </nav>
@@ -55,7 +56,7 @@
         <div class="contenedor_foto_nombre">
             <img class="imagen_perfil" src="../assets/images/fotoPerfil.png" alt="fotoPerfil" width="180"
                 title="foto Perfil">
-            <h4>Nombre del usuario </h4>
+            <h4 id="nombreUser">Nombre del usuario </h4>
         </div>
 
         <!-- Columna 2 -->
@@ -64,13 +65,15 @@
                 <ul>
                     <li>
                         <label for="email" class="columna1">Email</label>
-                        <input type="email" name="email" value="alexis@hotmail.com">
+                        <input type="email" name="emailActual" id="emailActual">
                     </li>
 
                     <li>
                         <label for="contraseña" class="columna1">Contraseña</label>
-                        <input type="contraseña" value="***************">
+                        <input type="contraseña" placeholder="***************" id="inputContraseñaActual">
                     </li>
+
+
 
                     <br><br>
 
@@ -84,35 +87,58 @@
                     </li>
                     <br><br><br>
                     <br>
+
+
+                    <div id="contenedor-boton-guardar">
+                        <div>
+                            <button class="boton" onclick="ponerNombre()" id="guardar" type="submit">Guardar cambios
+                            </button>
+                        </div>
+
+                        <br>
+
+                        <div>
+
+                            <ul id="correciones1">
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
                 </ul>
+
                 <br>
             </form>
         </article>
 
         <!-- Columna 3 -->
-        <article class="contenedor_columna">
+        <article class="contenedor_columna2">
             <h2 class="titulo_metodo_de_pago">
                 Metodo de pago
             </h2>
 
-            <form action="#">
+            <form action="#" method="get">
+
                 <ul class="lista-segundo-articulo">
-                    <li><input type="radio" name="opcionDePago">
-                        <label for="opcionDePago">Tarjeta de credito</label>
+                    <li>
+                        <input type="radio" name="opcionDePago" id="tarjetaDeCredito">
+                        <label for="tarjetaDeCredito">Tarjeta de credito</label>
                     </li>
                     <li>
-                        <input placeholder="Numero de tarjeta " class="input-tarjeta" type="number">
-                        <input class="input-tarjeta2" placeholder="XXX" type="number">
+                        <input placeholder="Numero de tarjeta " class="input-tarjeta" type="number" id="numeroTarjeta">
+                        <input class="input-tarjeta2" placeholder="XXX" type="number" id="numero3digitos">
                     </li>
 
                     <li>
-                        <input type="radio" name="opcionDePago">
+                        <input type="radio" name="opcionDePago" id="CuponDePago">
                         <label for="opcionDePago">Cupon de pago</label>
                     </li>
 
                     <li class="lista-pago-facil">
                         <label for="PagoFacil"> Pago Facil</label>
-                        <input type="checkbox" value="CuponPago" id="PagoFacil" name="name1" checked>
+                        <input type="checkbox" value="CuponPago" id="PagoFacil" name="name1">
                         <label for="RapiPago"> Rapipago</label>
                         <input type="checkbox" value="CuponPago2" id="RapiPago" name="name1">
                     </li>
@@ -129,11 +155,21 @@
 
                     <!-- Botones -->
                     <div class="contenedor-botones">
-                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
-                                class="boton" id="guardar" type="submit">Guardar cambios
-                            </button></a>
-                        <a class="enlace" href="pages/vistaPantallaPrincipal.html" target="_blank"> <button
-                                class="boton" id="cancelar" type="submit">Cancelar suscripcion</button></a>
+
+                        <button class="boton" id="cancelar" type="submit">Cancelar suscripcion</button>
+
+                        <br>
+
+
+                        <div>
+
+                            <ul id="correciones2">
+
+                            </ul>
+                        </div>
+
+
+
                     </div>
                 </ul>
             </form>
@@ -142,31 +178,43 @@
 
 
     <!--Footer-->
-    <footer class="footer">
-            <div class="footer-grid">
-                <div class="footer-links">
-                    <ul class="lista">
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Tarjetas de regalo</a></li>
-                        <li><a href="#">Avisos legales</a></li>
-                        <li><a href="#">Centro de ayuda</a></li>
-                    </ul>
+    <footer>
+
+
+            <div class="footer-links">
+
+                <ol>
+                    <li class="li-links-footer"><a href="#">Contactanos</a></li>
+                    <li class="li-links-footer"><a href="#">Registros</a></li>
+                    <li class="li-links-footer"><a href="#">Ubicacion</a> </li>
+                    <li class="li-links-footer"><a href="#">Historia</a></li>
+                  </ol>
+              
+              </div>
+              
+            <div class="footer-copy">
+
+           
+                    <p> &copy 2024 Not-flix. Todos los derechos reservados.</p> 
+                
+              
+              </div>
+      
+              <div class="footer-iconos">
+                <ol>
+                    <li class="li-iconos-footer"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="li-iconos-footer"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="li-iconos-footer"><i class="fa-brands fa-x-twitter"></i> </li>
+         
+                  </ol>
+
+               
                 </div>
-                <div class="footer-iconos">
-                    <div>
-                        <h3>Siguenos</h3>
-                    </div>
-                    <div>
-                        <ul class="lista-iconos">
-                            <li><i class="fa-brands fa-facebook-f fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
-                            <li><i class="fa-brands fa-instagram fa-2xl""></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+             </div>
     </footer>
+
+    <script src=" ../scripts/script.js"></script>
+
 
 </body>
 
