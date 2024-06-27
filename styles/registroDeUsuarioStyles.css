@@ -41,6 +41,12 @@ input {
     border-radius: 4px;
 }
 
+
+#enviar:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
 section {
     margin-bottom: 7%;
 }

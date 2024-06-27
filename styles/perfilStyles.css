@@ -87,11 +87,12 @@
     
     .color-rojo {
         background-color: var(--rojo);
+        color: white;
     }
     
     .color-rojo:hover {
         background-color: var(--rojo);
-        color: var(--negro);
+        color: white;
         transform: scale(1.3);
     }
     
@@ -353,6 +354,7 @@
             padding: 2%;
             margin-bottom: 2%;
             text-align: center;
+            color: white;
         }
 
         .contenedor-columna{

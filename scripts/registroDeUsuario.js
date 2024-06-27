@@ -6,15 +6,33 @@ document.addEventListener('DOMContentLoaded', function () {
     let form = document.querySelector("form")
 
     let mensaje = document.querySelector("#mensaje");
+    let botonEnviar = document.querySelector('#enviar')
+
+    botonEnviar.disabled = true
+
+    document.querySelector('#nombre').addEventListener('input', validar);
+    document.querySelector('#apellido').addEventListener('input', validar);
+    document.querySelector('#correo').addEventListener('input', validar);
+    document.querySelector('#nombre_de_usuario').addEventListener('input', validar);
+    document.querySelector('#contraseña').addEventListener('input', validar);
+    document.querySelector('#repetir_contraseña').addEventListener('input', validar);
+
+    
+
+   
 
 
- 
     form.addEventListener("submit", (evento) => {
         evento.preventDefault()
         validar()
     })
 
     function validar() {
+
+        let botonEnviar = document.querySelector('#enviar')
+
+        botonEnviar.disabled = true
+
 
 
         let error = false
@@ -142,6 +160,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
 
+        botonDesactivado();
+
 
         if (error) {
             mensaje.innerHTML = mensajesError;
@@ -163,6 +183,12 @@ document.addEventListener('DOMContentLoaded', function () {
             
         }
 
+
+        function botonDesactivado() {
+            if (nombre != "" && apellido != "" && email != "" && contrasenia != "" && repetir_contrasenia != "" && metodoPagoSeleccionado != "") {
+                botonEnviar.disabled = false;
+            }
+        }
     }
 
     function validarNombreOApellido(valor) {
